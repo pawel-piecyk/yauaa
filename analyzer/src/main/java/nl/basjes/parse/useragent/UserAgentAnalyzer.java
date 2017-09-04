@@ -98,7 +98,8 @@ public class UserAgentAnalyzer extends UserAgentAnalyzerDirect implements Serial
         return new UserAgentAnalyzerBuilder<>(new UserAgentAnalyzer(false));
     }
 
-    public static class UserAgentAnalyzerBuilder<UAA extends UserAgentAnalyzer, B extends UserAgentAnalyzerBuilder<UAA, B>> extends UserAgentAnalyzerDirectBuilder<UAA, B> {
+    public static class UserAgentAnalyzerBuilder<UAA extends UserAgentAnalyzer, B extends UserAgentAnalyzerBuilder<UAA, B>>
+            extends UserAgentAnalyzerDirectBuilder<UAA, B> {
         private final UAA uaa;
 
         public UserAgentAnalyzerBuilder(UAA newUaa) {
